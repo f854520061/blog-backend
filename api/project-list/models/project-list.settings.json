@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_lists",
+  "info": {
+    "name": "projectList",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "string"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}
