@@ -12,7 +12,7 @@
   "devDependencies": {},
   "dependencies": {
     "knex": "<0.20.0",
-    "mysql": "^2.18.1",
+    "mysql": "5.6.0",
     "strapi": "3.4.6",
     "strapi-admin": "3.4.6",
     "strapi-connector-bookshelf": "3.4.6",
